@@ -8,9 +8,9 @@ Resources:
         Description: Resize image demo
         Environment:
           Variables:
-            my_appid: XXXXXX  # 请替换为您的 APPID
-            my_secret_id: **************  # 请替换为您的 SecretId
-            my_secret_key: *************   # 请替换为您的 SecretKey
+            my_appid: XXXXXX 
+            my_secret_id: XXXXXXXXXX
+            my_secret_key: XXXXXXXXXX
 
         Handler: Thumbnail.main_handler
         MemorySize: 128
@@ -28,11 +28,11 @@ Resources:
         #        Properties:
         #            CronExpression: '*/5 * * * *'
         #            Enable: OPEN
-            cli-12345678.cos.ap-beijing.myqcloud.com: # 替换为您的bucket链接
+            cli-12345678.cos.ap-beijing.myqcloud.com: 
                 Type: COS
                 Properties:
                     Filter:
-                        Prefix: xxxxx/ #替换为您的bucket名称
+                        Prefix: xxxxx/ 
                         Suffix: .jpg
                     Events: cos:ObjectCreated:*
                     Enable: OPEN
