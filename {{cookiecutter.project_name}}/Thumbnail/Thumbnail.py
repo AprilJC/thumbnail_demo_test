@@ -18,7 +18,7 @@ secret_id = os.environ.get('my_secret_id')  # 请替换为您的 SecretId
 secret_key = os.environ.get('my_secret_key')  # 请替换为您的 SecretKey
 region = u'ap-guangzhou'                           # 请替换为您bucket 所在的地域
 token = ''
-resized_bucket = 'imgresized'         # 请替换为您用于存放压缩后图片的bucket
+resized_bucket = os.environ.get('resized_bucket')         # 请替换为您用于存放压缩后图片的bucket
 
 config = CosConfig(Secret_id=secret_id, Secret_key=secret_key, Region=region, Token=token)
 client = CosS3Client(config)
