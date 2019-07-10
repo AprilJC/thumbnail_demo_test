@@ -8,9 +8,10 @@ Resources:
         Description: Resize image demo
         Environment:
           Variables:
-            my_appid: XXXXXX 
-            my_secret_id: XXXXXXXXXX
-            my_secret_key: XXXXXXXXXX
+            my_appid: 'XXXXXX' 
+            my_secret_id: 'XXXXXXXXXX'
+            my_secret_key: 'XXXXXXXXXX'
+            resized_bucket: 'imgresized-XXXXX'
 
         Handler: Thumbnail.main_handler
         MemorySize: 128
